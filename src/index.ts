@@ -9,6 +9,7 @@ export type Error<TError> = {
 };
 
 export type Result<TValue> = Ok<TValue> | Error<string>;
+
 export type CustomResult<TValue, TError> = Ok<TValue> | Error<TError>;
 
 export const Result = {
@@ -16,8 +17,9 @@ export const Result = {
     error: <TError>(error: TError): Error<TError> => ({ isError: true, error }),
     get: <TValue>(source: Result<TValue>): TValue => {
         if (source.isError) {
-            throw new Error('isError is true');
+            throw new Error('isError must not be true');
         }
+
         return source.value;
     },
 };
