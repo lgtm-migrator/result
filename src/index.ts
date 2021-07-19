@@ -3,12 +3,12 @@ export type Ok<TValue> = {
     value: TValue;
 };
 
-export type Error<TError> = {
+export type Error<TError = string> = {
     isError: true;
     error: TError;
 };
 
-export type Result<TValue> = Ok<TValue> | Error<string>;
+export type Result<TValue> = Ok<TValue> | Error;
 
 export type CustomResult<TValue, TError> = Ok<TValue> | Error<TError>;
 
