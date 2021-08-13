@@ -32,6 +32,7 @@
         "type": "git",
         "url": "https://github.com/kizahasi/result"
     },
+    "description": "Represents a value which is either OK or error.",
     "devDependencies": {
         "@types/jest": "^26.0.24",
         "@typescript-eslint/eslint-plugin": "^4.28.2",
