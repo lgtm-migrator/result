@@ -1,16 +1,16 @@
 export type Ok<TValue> = {
     isError: false;
     value: TValue;
+    error?: undefined;
 };
 
 export type Error<TError = string> = {
     isError: true;
+    value?: undefined;
     error: TError;
 };
 
-export type Result<TValue> = Ok<TValue> | Error;
-
-export type CustomResult<TValue, TError> = Ok<TValue> | Error<TError>;
+export type Result<TValue, TError = string> = Ok<TValue> | Error<TError>;
 
 export const Result = {
     ok: <TValue>(value: TValue): Ok<TValue> => ({ isError: false, value }),
@@ -19,7 +19,6 @@ export const Result = {
         if (source.isError) {
             throw new Error('isError must not be true');
         }
-
         return source.value;
     },
 };
