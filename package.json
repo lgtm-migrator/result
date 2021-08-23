@@ -15,7 +15,7 @@
         "test": "jest",
         "prepare": "yarn build && husky install",
         "lint": "eslint src test",
-        "prettier": "prettier --write \"src/**/*.ts\" \"test/**/*.ts\" \".github/**/*.yml\""
+        "prettier": "prettier --write \"**/*.{ts,js,json,yml,md}\""
     },
     "prettier": {
         "printWidth": 100,
