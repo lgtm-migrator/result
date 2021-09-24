@@ -1,6 +1,6 @@
 # @kizahasi/result
 
-![GitHub](https://img.shields.io/github/license/kizahasi/result) [![npm version](https://img.shields.io/npm/v/@kizahasi/result.svg?style=flat)](https://www.npmjs.com/package/@kizahasi/result) ![minified size](https://img.shields.io/bundlephobia/min/@kizahasi/result) [![CI](https://github.com/kizahasi/result/actions/workflows/main.yml/badge.svg?branch=main)](https://github.com/kizahasi/result/actions/workflows/main.yml) [![publish](https://github.com/kizahasi/result/actions/workflows/publish.yml/badge.svg?branch=release)](https://github.com/kizahasi/result/actions/workflows/publish.yml)
+![GitHub](https://img.shields.io/github/license/kizahasi/result) [![npm version](https://img.shields.io/npm/v/@kizahasi/result.svg?style=flat)](https://www.npmjs.com/package/@kizahasi/result) ![minified size](https://img.shields.io/bundlephobia/min/@kizahasi/result) [![CI](https://github.com/kizahasi/result/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/kizahasi/result/actions/workflows/ci.yml) [![publish](https://github.com/kizahasi/result/actions/workflows/publish.yml/badge.svg?branch=release)](https://github.com/kizahasi/result/actions/workflows/publish.yml)
 
 Represents a value which is either OK or error.
 

@@ -1,9 +1,8 @@
-name: publish
+name: can-publish
 
 on:
-    push:
-        branches:
-            - release
+    pull_request:
+        branches: [release]
 
 jobs:
     build:
@@ -18,11 +17,3 @@ jobs:
                   always-auth: true
             - name: can publish
               run: npx can-npm-publish --verbose
-            - name: install
-              run: yarn
-            - name: build
-              run: yarn build
-            - name: publish
-              run: yarn publish --access=public
-              env:
-                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}

@@ -15,4 +15,3 @@ module.exports = {
         'space-before-blocks': 'warn',
     },
 };
-
