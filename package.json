@@ -34,8 +34,8 @@
     },
     "description": "Represents a value which is either OK or error.",
     "devDependencies": {
-        "@commitlint/cli": "15.0.0",
-        "@commitlint/config-conventional": "15.0.0",
+        "@commitlint/cli": "17.0.3",
+        "@commitlint/config-conventional": "17.0.3",
         "@types/jest": "27.5.2",
         "@typescript-eslint/eslint-plugin": "4.33.0",
         "@typescript-eslint/parser": "4.33.0",
